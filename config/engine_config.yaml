@@ -1,0 +1,18 @@
+engine:
+  signal_length: 2048
+  entropy_threshold: 0.15
+  execution_window: 128
+  alpha_scale: 1.2
+  lorenz:
+    sigma: 10.0
+    rho: 28.0
+    beta: 2.6667
+  regime_model:
+    decay: 0.92
+  attractor_lstm:
+    input_size: 1
+    hidden_size: 64
+    num_layers: 2
+  routes:
+    enable_entropy_wave: true
+    enable_breach_detection: true
